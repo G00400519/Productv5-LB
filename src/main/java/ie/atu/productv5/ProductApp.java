@@ -1,4 +1,4 @@
-package ie.atu.productv3;
+package ie.atu.productv5;
 
 import java.util.Scanner;
 
