@@ -83,6 +83,32 @@ public class ProductDB {
             myMusic.setArtist("Imagine Dragons");
             p = myMusic;
         }
+
+        if (productCode.equalsIgnoreCase("samsung")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("SAMSUNG UE43BU8000KXXU 43\" Smart 4K Ultra HD HDR LED TV with Bixby, Alexa & Google Assistant");
+            myTV.setPrice(480);
+            myTV.setManufacturer("Samsung");
+            myTV.setScreen_size("43");
+            p = myTV;
+        }   else if(productCode.equalsIgnoreCase("sony")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("SONY BRAVIA KD32W800PU 32\" Smart HD Ready HDR LED TV with Google Assistant");
+            myTV.setPrice(370);
+            myTV.setManufacturer("Sony");
+            myTV.setScreen_size("32");
+            p = myTV;
+        }   else if (productCode.equalsIgnoreCase("toshiba")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("TOSHIBA 32WK3C63DB 32\" Smart HD Ready HDR LED TV with Amazon Alexa");
+            myTV.setPrice(200);
+            myTV.setManufacturer("Toshiba");
+            myTV.setScreen_size("32");
+            p = myTV;
+        }
         return p;
     }
 }
