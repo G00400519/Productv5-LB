@@ -1,4 +1,4 @@
-package ie.atu.productv5;
+package ie.atu.productv6;
 
 public class ProductDB {
 
