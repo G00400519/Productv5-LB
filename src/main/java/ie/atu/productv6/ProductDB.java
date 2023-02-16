@@ -109,6 +109,64 @@ public class ProductDB {
             myTV.setScreen_size("32");
             p = myTV;
         }
+
+        if (productCode.equalsIgnoreCase("yorkshire")) {
+            Dog myDog = new Dog();
+            myDog.setCode(productCode);
+            myDog.setDescription("Yorkshire Terrier");
+            myDog.setPrice(1200);
+            myDog.setVaccination("No");
+            myDog.setShedding("No");
+            myDog.setNeutered("Yes");
+            p = myDog;
+        }   else if (productCode.equalsIgnoreCase("golden")) {
+            Dog myDog = new Dog();
+            myDog.setCode(productCode);
+            myDog.setDescription("Golden Retriever");
+            myDog.setPrice(1800);
+            myDog.setVaccination("Yes");
+            myDog.setShedding("No");
+            myDog.setNeutered("No");
+            p = myDog;
+        }   else if (productCode.equalsIgnoreCase("shepherd")) {
+            Dog myDog = new Dog();
+            myDog.setCode(productCode);
+            myDog.setDescription("German Shepherd");
+            myDog.setPrice(1600);
+            myDog.setVaccination("No");
+            myDog.setShedding("No");
+            myDog.setNeutered("No");
+            p = myDog;
+        }
+
+        if (productCode.equalsIgnoreCase("fell")) {
+            Horse myHorse = new Horse();
+            myHorse.setCode(productCode);
+            myHorse.setDescription("Fell Horse");
+            myHorse.setPrice(5000);
+            myHorse.setDam("No");
+            myHorse.setSire("Yes");
+            myHorse.setHeight("137");
+            p = myHorse;
+        }   else if(productCode.equalsIgnoreCase("arabian")) {
+            Horse myHorse = new Horse();
+            myHorse.setCode(productCode);
+            myHorse.setDescription("Arabian Horse");
+            myHorse.setPrice(7800);
+            myHorse.setDam("No");
+            myHorse.setSire("No");
+            myHorse.setHeight("158");
+            p = myHorse;
+        }   else if (productCode.equalsIgnoreCase("curly")) {
+            Horse myHorse = new Horse();
+            myHorse.setCode(productCode);
+            myHorse.setDescription("Curly Horse");
+            myHorse.setPrice(6400);
+            myHorse.setDam("Yes");
+            myHorse.setSire("No");
+            myHorse.setHeight("148");
+            p = myHorse;
+        }
         return p;
     }
 }
